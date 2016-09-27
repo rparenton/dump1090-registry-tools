@@ -4,4 +4,4 @@ use dump1090;
 
 --DELETE FROM FAA_Registry WHERE STATUS_CODE NOT LIKE 'V';
 
-UPDATE FAA_Registry SET N_NUMBER = Concat('N', N_NUMBER);
+--UPDATE FAA_Registry SET N_NUMBER = Concat('N', N_NUMBER);

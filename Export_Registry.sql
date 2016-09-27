@@ -1,3 +1,9 @@
 use dump1090;
 
-SELECT FAA_Registry.MODE_S_CODE_HEX, FAA_Registry.N_NUMBER, FAA_to_ICAO_Type_Mapping.ICAO_TYPE INTO OUTFILE '/tmp/faa_registry.csv' FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' FROM FAA_Registry INNER JOIN FAA_to_ICAO_Type_Mapping on FAA_Registry.MFR_MDL_CODE = FAA_to_ICAO_Type_Mapping.CODE WHERE ICAO_TYPE NOT LIKE ''; 
+SELECT FAA_Registry.MODE_S_CODE_HEX, FAA_Registry.N_NUMBER, FAA_to_ICAO_Type_Mapping.ICAO_TYPE
+	INTO OUTFILE 'faa_registry.csv'
+		FIELDS TERMINATED BY ','
+		LINES TERMINATED BY '\n'
+	FROM FAA_Registry
+	INNER JOIN FAA_to_ICAO_Type_Mapping on FAA_Registry.MFR_MDL_CODE = FAA_to_ICAO_Type_Mapping.CODE
+	WHERE ICAO_TYPE NOT LIKE ''; 
