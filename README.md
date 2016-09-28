@@ -2,5 +2,6 @@
 
 File | Information
 ---- | -----------
-export_registry_csv.sql | Exports the aircraft registration database to a CSV file in the format dump1090's `csv-to-json.py` expects.  The file will be created in the database's directory.
+export_registry_csv.sql | Exports the aircraft registration database to CSV files in the format dump1090's `csv-to-json.py` expects.  The files are created in the database's directory and there is one file per registration agency (e.g. FAA).
+faa_registry.csv | FAA aircraft registration database in the format dump1090's `csv-to-json.py` expects.
 import_registry_files.sql | Imports CSV formatted aircraft registration databases from the registration agencies (e.g. FAA).
