@@ -1,6 +1,6 @@
 # dump1090 Aircraft Registration Database Tools
 
-## This project is on hold because FlightAware has provided a dump their aircraft registration database for dump1090.  See http://discussions.flightaware.com/post199217.html for more details.  Also see status.txt for a list of major manufacturers with incomplete data in this project.
+### This project is on hold because FlightAware has provided a dump their aircraft registration database for dump1090.  See http://discussions.flightaware.com/post199217.html for more details.  Also see `status.txt` for a list of major manufacturers with incomplete data in this project.
 
 File | Description
 ---- | -----------
